@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pong</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        background-color: brown;
+        height: 100vh;
+        width: 100vw;
+          background-color:#E5D283
+    }
+    .paddle {
+        position: absolute;
+        top: 5px;
+        height: 30vh;
+        width: 2vw;
+        background-color: #4F709C;
+        border-radius: 5px;
+        border: 2px black solid;
+        
+    }
+
+    #player1 {
+        left: 1vw;
+    }
+
+    #player2 {
+        right: 1vw;
+    }
+    .count{
+       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       font-size: 15vh;
+       position: absolute;
+    }
+    #leftCounter{
+        left:30vw
+    }
+    #rightCounter{
+        right:30vw
+    }
+
+    #ball {
+        background-color:#213555;
+        position: absolute;
+        display: inline;
+        padding: 6vh;
+        border-radius: 50%;
+        margin-left: 7vw;
+         border: 2px black solid; 
+    }
+</style>
+
+<body>
+    <div id="leftCounter" class="count">0</div>
+    <div class="paddle" id="player1"></div>
+    <span id="ball"></span>
+    <div id="rightCounter" class="count">0</div>
+    <div class="paddle" id="player2"></div>
+</body>
+<script src="pingpong.js">
+</script>
+</html>
